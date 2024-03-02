@@ -1,15 +1,13 @@
 "use client"
 import { useRef } from "react";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { OrbitControls, useGLTF } from "@react-three/drei";
 import { Mesh } from "three";
-import { materialRotation } from "three/examples/jsm/nodes/Nodes.js";
 
 function MeshComponent() {
-    const fileUrl = "/female-base/scene.gltf";
+    const fileURL = "/female-base/scene.gltf";
     const mesh = useRef<Mesh>(null!);
-    const gltf = useLoader(GLTFLoader, fileUrl);
+    const gltf = useGLTF(fileURL)
 
     useFrame(() => {
         mesh.current.rotation.y += 0.005;
