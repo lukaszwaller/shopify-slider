@@ -3,7 +3,7 @@ const ShopBoard = () => {
   const buttons = ["XS", "S", "M", "L", "XL", "XXL"]
 
   return (
-    <div className="w-2/5 p-4">
+    <div className="w-full md:w-2/5 mt-12 mr-4">
       <h1 className="mt-12 mb-2 font-bold">6PM + NYLON JACKET BLACK</h1>
       <hr></hr>
       <p className="mt-2 mb-8 text-xs font-bold">99,00€</p>
@@ -13,7 +13,7 @@ const ShopBoard = () => {
       </div>
       <div className="flex">
         {buttons.map((button, index) => (
-          <button key={index} className="border-2 p-4 block w-full">{button}</button>
+          <button key={index} className="border-2 p-4 block w-full transition ease-in-out delay-150 hover:font-bold">{button}</button>
         ))}
       </div>
       <div className="bg-gray-200 flex text-xs font-bold justify-between mt-2 pl-8 pr-8">

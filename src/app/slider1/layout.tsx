@@ -6,7 +6,7 @@ export default function Slider1({
     children: React.ReactNode
 }) {
     return (
-        <div className="flex justify-between">
+        <div className="flex flex-col md:flex-row">
             {children}
             <ShopBoard />
         </div>

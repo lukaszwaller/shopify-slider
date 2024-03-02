@@ -1,3 +1,7 @@
+import { Slider } from "@/components/Slider"
+
 export default function Page() {
-    return <h1 className="text-3xl font-bold underline">Slider 1</h1>
+    return <div className="w-full h-screen md:w-3/5">
+        <Slider />
+    </div>
 }
