@@ -4,10 +4,10 @@ import Link from "next/link"
 
 const Navbar = () => {
   const menu = [
-    { name: "Slider 1", url: "/" },
-    { name: "Slider 2", url: "/" },
-    { name: "Slider 3", url: "/" },
-    { name: "Slider 4", url: "/" },
+    { name: "Slider 1", url: "/slider1" },
+    { name: "Slider 2", url: "/slider2" },
+    { name: "Slider 3", url: "/slider3" },
+    { name: "Slider 4", url: "/slider4" },
   ];
 
   return (
